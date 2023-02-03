@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200&family=Roboto&family=Sacramento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+ion-icon{
+    color: white;
+    font-size: 100px;
+}
+.container{
+    width: 98vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+.welcome-page, .add-task{
+    height: 100%;
+    width: 100%;
+}
+.add-streak, .close-window{
+    display: flex;
+    align-items: center;
+}
+.welcome-message{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    
+}
+.top-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55%;
+    padding: 1rem;
+    background-color: #FF7B54;
+
+}
+.bottom-page{
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* .welcome-page{
+    display: none;
+} */
+  /* visibility: hidden; */
+.not-active{
+    display: none;
+}
+.close-button, #add-streak{
+    background-color: #FF7B54;
+    border: none;
+}
+.watch{
+    display: flex;
+    align-items: flex-end;
+    z-index: 10000;
+}
+.watch img{
+    height: 150px;
+    width: 100px;
+}
+form{
+    border: 5px solid white;
+    background-color: white;
+    height: 110%;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    
+    /* justify-content: space-between; */
+    /* margin-left: -5rem; */
+}
+form > h4{
+    background-color: #FF7B54;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+}
+#name, #image, #date{
+    height: 3rem;
+    /* border-radius: 4px; */
+}
+label{
+    color: #FF7B54;
+}
+
+#add-btn{
+    border: none;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    color: white;
+    background-color: #FF7B54;
+}
+.todo > p{
+    color: white;
+}
+
+.iphone img{
+    height:20rem;
+    width: 13rem;
+}
+.pop-up{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: aliceblue;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    width: 30rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    /* display: none; */
+}
+.pop-up-active{
+    transform: translate(-50%,-50%) scale(1);
+}
+.pop-up-icon ion-icon{
+    font-size: 7rem;
+    color: #39B5E0;
+}
+.close-btn, .delete-btn{
+    border: none;
+    height: 3rem;
+    width: 6rem;
+    color: white;
+    cursor: pointer;
+}
+.close-btn{
+    background-color: red;
+}
+.delete-btn{
+    background-color: gray;
+}
+/* .pop-up-buttons{
+    
+} */
+.bottom-page ion-icon{
+    color: blue;
+}
+.activity-display{
+    border: 2px solid red;
+    width: 10rem;
+    padding: 1rem;
+    display: flex;
+
+    ;
+}
